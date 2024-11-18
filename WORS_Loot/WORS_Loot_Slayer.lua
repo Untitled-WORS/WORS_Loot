@@ -335,7 +335,7 @@ WORS_Loot_Slayer_Data = {
 	
 	Vannaka = {
 		--Vannaka
-		thirdSubCatList = {"Kalphite", "Hobgoblins", "Ghouls", "Hill Giants", "Shades", "Vampyres", "Ankou", "Moss giants", "Ogres", "Otherworldly beings", "Ice warriors", "Crocodiles", "Ice giants", "Lesser demons", "Shadow warriors", "Trolls", "Werewolves", "Blue dragons", "Fire giants", "Jungle horrors", "Elves", "Dagannoth", "Hellhounds", "Cockatrice"},
+		thirdSubCatList = {"Kalphite", "Hobgoblins", "Ghouls", "Hill Giants", "Shades", "Vampyres", "Ankou", "Moss giants", "Ogres", "Otherworldly beings", "Ice warriors", "Crocodiles", "Ice giants", "Lesser demons", "Shadow warriors", "Trolls", "Werewolves", "Blue dragons", "Fire giants", "Jungle horrors", "Elves", "Dagannoth", "Hellhounds", "Cockatrice", "Pyrefiends", "Mogres", "Harpie Bug Swarms", "Molanisks", "Basilisks", "Sea snakes", "Terror dogs", "Fever spiders", "Infernal Mages", "Brine rats", "Bloodveld", "Jellies", "Turoth", "Aberrant spectres", "Spiritual creatures", "Dust devils", "Kurask", "Gargoyles", "Nechryael", "Abyssal demons"},
 		['Kalphite'] = {
 		--normalDrops = {"Waterskin", "Iron sword", "Steel dagger", "Law rune", "Hard leather body", "Body rune", "Chaos rune", "Fire rune", "Water rune", "Nature rune", "Grimy guam leaf", "Grimy marrentill", "Iron javelin", "Steel longsword", "Cosmic rune", "Grimy tarromin", "Grimy harralander", "Grimy ranarr weed", "Ensouled kalphite head"},
 		  normalDrops = {"90184", "90267", "90139", "90453", "90038", "90052", "90070", "90107", "90091", "90078", "90083", "90274", "90130", "90207", "90079", "90084"},
