@@ -344,7 +344,7 @@ end
 local function DisplayDefaultInfo()
     -- Create a text frame to display information about the add-on
     --local infoText = LootFrame:CreateFontString(nil, "OVERLAY", "GameFontNormal")
-	infoText:SetText("Welcome to the WORS Loot!\n\nSelect a category to view item tables for Bosses, \nSlayer Tasks, Crafting and More.\n\nItems in orange text like this |cffff8000[42069]|r will update if you click them\n\nItems with Black background are from the regular drop table\nItems with a |cffa500ffPurple|r background are from random drop table\n\nDrop tables have been mostly scraped from OSRS wiki \nmistakes likely here")
+	infoText:SetText("Select a category to view item tables for Bosses, \nSlayer Tasks, Crafting and More.")
 	--subInfoText:SetText("")
     -- Example button for normal drops
     local normalDropButton = CreateLootButton(90066, 1, false)  -- Replace 12345 with an example item ID
@@ -579,7 +579,7 @@ function loadLootTransparency()
 end
 
 
-function toggleTransparency()
+function toggleLootTransparency()
     -- Toggle transparency between 50% (0.5) and 100% (1.0)
     if WORS_LootData.transparency == 1.0 then
         WORS_LootData.transparency = 0.5
@@ -632,10 +632,10 @@ local miniButton = LibStub("LibDataBroker-1.1"):NewDataObject("WORS_Loot", {
             end
         elseif btn == "RightButton" then
 			if WORS_Loot:IsShown() then
-                toggleTransparency()
+                toggleLootTransparency()
             else
                 WORS_Loot:Show()
-				toggleTransparency()
+				toggleLootTransparency()
             end
         end
 	end,
@@ -660,6 +660,4 @@ function addon:OnInitialize()
 	loadLootTransparency()
 end
 
-
-WORSLootMinimapButton:Show("WORS_Loot")
 print("WORS Loot addon loaded.")

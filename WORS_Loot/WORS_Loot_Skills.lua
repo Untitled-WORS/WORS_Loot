@@ -2,13 +2,17 @@ WORS_Loot_Skill_Data = {
     subcategoryOneText = "Select Skill",
     subcategoryTwo = true,
     subcategoryTwoText = "Select Subcat",
-    subTwoCat = {"Crafting", "Fletching", "Herblore", "Runecrafting", "Smithing", "Woodcutting"},  -- Add masters here
-	--subTwoCat = {"Smithing", "Woodcutting"},  -- Add masters here
+    subTwoCat = {"Crafting", "Cooking", "Farming", "Fishing", "Fletching", "Herblore", "Runecrafting", "Smithing", "Woodcutting"},  -- Add masters here
 	--Agility={},
 	--Construction={},
-	--Cooking={},
-    Crafting = {
-        thirdSubCatList = {"d'Hide Gear", "Snakeskin Gear", "Leather Gear", "Pottery"},
+	Cooking={
+		thirdSubCatList = {"Meat / Fish"},
+
+		['Meat / Fish'] = {
+		--normalDrops = {"Raw beef", "Cooked meat", "Raw Shrimps", "Shrimps", "raw chicken", "Cooked chicken", "Raw rabbit", "Cooked rabbit", "Raw Anchovies", "Anchovies", "Raw Sardine", "Sardine", "Raw Poison karambwan", "Poison karambwan", "Raw Ugthanki meat", "Ugthanki meat", "Raw Herring", "Herring", "Raw Guppy", "Guppy", "Raw Mackerel", "Mackerel", "Raw Roast bird meat", "Roast bird meat", "Raw Thin snail", "Thin snail", "Raw Trout", "Trout", "Raw Spider on stick", "Spider on stick", "Raw Spider on shaft", "Spider on shaft", "Raw Roast rabbit", "Roast rabbit", "Raw Lean snail", "Lean snail", "Raw Cod", "Cod", "Raw Pike", "Pike", "Raw Cavefish", "Cavefish", "Raw Roast beast meat", "Roast beast meat", "Raw Cooked crab meat", "Cooked crab meat", "Raw Fat snail", "Fat snail", "Raw Cooked wild kebbit", "Cooked wild kebbit", "Raw Salmon", "Salmon", "Raw Slimy eel", "Slimy eel", "Raw Tuna", "Tuna", "Raw Cooked karambwan", "Cooked karambwan", "Raw Cooked chompy", "Cooked chompy", "Raw Cooked fishcake", "Cooked fishcake", "Raw Cooked larupia", "Cooked larupia", "Raw Cooked barb-tailed kebbit", "Cooked barb-tailed kebbit", "Raw Tetra", "Tetra", "Raw Rainbow fish", "Rainbow fish", "Raw Cave eel", "Cave eel", "Raw Lobster", "Lobster", "Raw Cooked jubbly", "Cooked jubbly", "Raw Cooked graahk", "Cooked graahk", "Raw Bass", "Bass", "Raw Swordfish", "Swordfish", "Raw Catfish", "Catfish", "Raw Cooked kyatt", "Cooked kyatt", "Raw Lava eel", "Lava eel", "Raw Cooked pyre fox", "Cooked pyre fox", "Raw Monkfish", "Monkfish", "Raw Cooked sunlight antelope", "Cooked sunlight antelope", "Raw Sacred eel", "Sacred eel", "Raw Shark", "Shark", "Raw Sea turtle", "Sea turtle", "Raw Cooked dashing kebbit", "Cooked dashing kebbit", "Raw Anglerfish", "Anglerfish", "Raw Dark crab", "Dark crab", "Raw Manta ray", "Manta ray", "Raw Cooked moonlight antelope", "Cooked moonlight antelope", "Sinew"}, rareDropTable = {},},
+		  normalDrops = {"90096", "90142", "90225", "90117", "90097", "90128", "90209", "90972", "90222", "90151", "90214", "90136", "90217", "90974", "90227", "90112", "90212", "90973", "90220", "90146", "90221", "90149", "90228", "90111", "90216", "90140", "90211", "90124", "90226", "90113", "90219", "90144", "90224", "90118", "90223", "90119", "90210", "90121", "90213", "90132", "90218", "90141", "90966"}, rareDropTable = {},},	},
+	Crafting = {
+        thirdSubCatList = {"d'Hide Gear", "Jewelry", "Snakeskin Gear", "Leather Gear", "Pottery"},
 		["d'Hide Gear"] = {
 		--normalDrops = {"Green Dragon Leather", "Green d'hide Vambraces", "Green d'hide Chaps", "Green d'hide Body", "Blue Dragon Leather", "Blue d'hide Vambraces", "Blue d'hide Chaps", "Blue d'hide Body", "Red Dragon Leather", "Red d'hide Vambraces", "Red d'hide Chaps", "Red d'hide Body", "Black Dragon Leather", "Black d'hide Vambraces", "Black d'hide Chaps", "Black d'hide Body"}, rareDropTable = {},},
 		  normalDrops = {"90449", "90451", "90447", "90446", "90417", "90418", "90415", "90414", "90482", "90485", "90480", "90479", "90548", "90413", "90409", "90408"}, rareDropTable = {},},
@@ -24,11 +28,66 @@ WORS_Loot_Skill_Data = {
 		['Pottery'] = {
 		--normalDrops = {"Pot", "Unfired Pot", "Pie Dish", "Unfired Pie Dish", "Bowl", "Unfired Bowl", "Plant Pot", "Unfired Plant Pot", "Pot Lid", "Unfired Pot Lid", "Oil Lamp", "Unfired Oil Lamp", "Empty Candle Lantern", "Unfired Empty Candle Lantern", "Empty Oil Lamp", "Unfired Empty Oil Lamp", "Empty Oil Lantern", "Unfired Empty Oil Lantern", "Empty Bullseye Lantern", "Unfired Empty Bullseye Lantern"}, rareDropTable = {},},
 		  normalDrops = {"90093", "91113", "91103", "91107", "90040", "91112", "91109", "91108", "91111", "91110"}, rareDropTable = {},},
+
 	},
-	-- --Farming={},
-	-- --Firemaking={},
-	-- --Fishing={},
-    Fletching = {
+	
+	Farming = {
+	    thirdSubCatList = {"Farming Tools", "Allotment Patch", "Flower Patch", "Herb Patch", "Hops Patch", "Fruit Tree Patch", "Tree Patch"},
+		['Farming Tools'] = {
+		--normalDrops = {"Rake", "Seed Dibber", "Secateurs", "Watering Can", "Gardening Trowel", "Spade", "Compost", "Plant Cure", "Empty Plant Pot", "Basket", "Empty Sack", "Scarecrow", "Bucket"}, rareDropTable = {},},
+		  normalDrops = {"90815", "90816", "90818", "90819", "91141", "90101", "91095", "53273", "52858", "52878", "52899", "53284", "90047"}, rareDropTable = {},},
+		['Allotment Patch'] = {
+		--normalDrops = {"Potato Seed", "Potato", "Onion Seed", "Onion", "Cabbage Seed", "Cabbage", "Tomato Seed", "Tomato", "Sweetcorn Seed", "Sweetcorn", "Strawberry Seed", "Strawberry", "Watermelon Seed", "Watermelon", "Snape grass Seed", "Snape grass"}, rareDropTable = {},},
+		  normalDrops = {"90754", "90094", "90755", "90092", "90756", "90050", "90757", "90842", "90758", "90759", "90760", "90761", "90632"}, rareDropTable = {},},
+		['Flower Patch'] = {
+		--normalDrops = {"Marigold Seed", "Marigold", "Rosemary Seed", "Rosemary", "Nasturtium Seed", "Nasturtium", "Woad Seed", "Woad", "Limpwurt Seed", "Limpwurt", "White lily Seed", "White lily"}, rareDropTable = {},},
+		  normalDrops = {"90762", "90763", "90764", "90765", "90766", "90767"}, rareDropTable = {},},
+		['Herb Patch'] = {
+		--normalDrops = {"Guam Seed", "Grimy guam leaf", "Marrentill Seed", "Grimy marrentill", "Tarromin Seed", "Grimy tarromin", "Harralander Seed", "Grimy harralander", "Gout tuber Seed", "Goutweed", "Ranarr Seed", "Grimy ranarr weed", "Toadflax Seed", "Grimy toadflax", "Irit Seed", "Grimy irit leaf", "Avantoe Seed", "Grimy avantoe", "Kwuarm Seed", "Grimy kwuarm", "Snapdragon Seed", "Grimy snapdragon", "Huasca Seed", "Grimy huasca", "Cadantine Seed", "Grimy cadantine", "Lantadyme Seed", "Grimy lantadyme", "Dwarf weed Seed", "Grimy dwarf weed", "Torstol Seed", "Grimy torstol"}, rareDropTable = {},},
+		  normalDrops = {"90768", "90078", "90769", "90083", "90770", "90207", "90771", "90079", "90772", "90084", "90773", "90553", "90774", "90080", "90775", "90075", "90776", "90081", "90777", "90554", "90778", "90076", "90779", "90082", "90780", "90077", "90781", "90555"}, rareDropTable = {},},
+		['Hops Patch'] = {
+		--normalDrops = {"Barley Seed", "Barley", "Hammerstone Seed", "Hammerstone Hops", "Asgarnian Seed", "Asgarnian Hops", "Jute Seed", "Jute Fibre", "Yanillian Seed", "Yanillian Hops", "Krandorian Seed", "Krandorian Hops", "Wildblood Seed", "Wildblood Hops"}, rareDropTable = {},},
+		  normalDrops = {"90782", "90783", "90784", "90785", "90786", "90787", "90788"}, rareDropTable = {},},
+		['Tree Patch'] = {
+		--normalDrops = {"Acorn", "Oak Logs", "Oak Roots", "Willow Seed", "Willow Logs", "Willow Roots", "Willow Branch", "Maple Seed", "Maple Logs", "Maple Roots", "Yew Seed", "Yew Logs", "Yew Roots", "Magic Seeds", "Magic Logs", "Magic Roots"}, rareDropTable = {},},
+		  normalDrops = {"90795", "90001", "90796", "90002", "90797", "90003", "90798", "90004", "90628", "90005", "90617"}, rareDropTable = {},},
+		['Fruit Tree Patch'] = {
+		--normalDrops = {"Apple Tree Seed", "Cooking apple", "Banana Tree Seed", "Banana", "Orange Tree Seed", "Orange", "Curry Tree Seed", "Curry LeafDEAD", "Pineapple Seed", "Pineapple", "Papaya Tree Seed", "Papaya", "Palm Tree Seed", "Coconut", "Dragonfruit Tree Seed", "Dragonfruit"}, rareDropTable = {},},
+		  normalDrops = {"90800", "91115", "90801", "90749", "90802", "90860", "90803", "91093", "90804", "90859", "90805", "90806", "91091", "90807"}, rareDropTable = {},},
+	
+	
+	
+	
+	},
+		
+	--Firemaking={},
+	
+	Fishing = {
+	    thirdSubCatList = {"Fishing Tools", "Small Fishing Net", "Big Fishing Net", "Fishing Rod", "Fly fishing rod", "Harpoon", "Lobster Pot"},
+		['Fishing Tools'] = {
+		--normalDrops = {"Small fishing net", "Big fishing net", "Drift net", "Fishing rod", "Fly fishing rod", "Oily fishing rod", "Barbarian rod", "Harpoon", "Lobster pot", "Fishing bait", "Feathers", "Stripy Feather", "Sandworm", "Dark Fishing bait", "King worm", "Fish chunks", "Raw karambwanji"}, rareDropTable = {},},
+		  normalDrops = {"90229", "90234", "90233", "90232", "90231", "90230", "90034", "90069", "91001"}, rareDropTable = {},},
+		['Small Fishing Net'] = {
+		--normalDrops = {"Small Fishing Net", "Raw shrimps", "Raw karambwanji", "Raw anchovies", "Raw guppy", "Raw cavefish", "Raw tetra", "Frog spawn", "Raw monkfish", "Minnow"}, rareDropTable = {},},
+		  normalDrops = {"90229", "90225", "90209", "90219"}, rareDropTable = {},},
+		['Big Fishing Net'] = {
+		--normalDrops = {"Big Fishing Net", "Raw mackerel", "Raw cod", "Raw bass", "Raw catfish"}, rareDropTable = {},},
+		  normalDrops = {"90234", "90217", "90212", "90211"}, rareDropTable = {},},
+		['Fishing Rod'] = {
+		--normalDrops = {"Fishing Rod", "Fishing Bait", "Sandworm", "Raw sardine", "Raw herring", "Raw pike", "Raw slimy eel", "Raw cave eel", "Raw anglerfish", "Sacred eel"}, rareDropTable = {},},
+		  normalDrops = {"90233", "90034", "90222", "90214", "90220", "90210"}, rareDropTable = {},},
+		['Fly fishing rod'] = {
+		--normalDrops = {"Fly fishing rod", "Feathers", "Stripy Feather", "Raw trout", "Raw salmon", "Raw trout"}, rareDropTable = {},},
+		  normalDrops = {"90232", "90069", "91001", "90227", "90221", "90227"}, rareDropTable = {},},
+		['Harpoon'] = {
+		--normalDrops = {"Harpoon", "Raw tuna", "Raw Swordfish", "Raw Shark"}, rareDropTable = {},},
+		  normalDrops = {"90231", "90228", "90226", "90224"}, rareDropTable = {},},
+		['Lobster Pot'] = {
+		--normalDrops = {"Lobster Pot", "Dark Fishing bait", "Raw Lobster", "Raw dark crab"}, rareDropTable = {},},
+		  normalDrops = {"90230", "90216", "90213"}, rareDropTable = {},},
+	},
+	
+	Fletching = {
         thirdSubCatList = {"Bows", "Arrows"},
 		['Bows'] = {
 		--normalDrops = {"Magic Shortbow", "Magic Shortbow Unstrung", "Magic Longbow", "Magic Longbow Unstrung", "Yew Shortbow", "Yew Shortbow Unstrung", "Yew Longbow", "Yew Longbow Unstrung", "Maple Shortbow", "Maple Shortbow Unstrung", "Maple Longbow", "Maple Longbow Unstrung", "Willow Shortbow", "Willow Shortbow Unstrung", "Willow Longbow", "Willow Longbow Unstrung", "Oak Shortbow", "Oak Shortbow Unstrung", "Oak Longbow", "Oak Longbow Unstrung", "Shortbow", "Shortbow Unstrung", "Longbow", "Longbow Unstrung"}, rareDropTable = {},},
@@ -37,22 +96,29 @@ WORS_Loot_Skill_Data = {
 		--normalDrops = {"Arrow Shaft", "Headless Arrows", "Rune Arrows", "Adamant Arrows", "Mithril Arrows", "Steel Arrows", "Iron Arrows", "Blurite Arrows", "Bronze Arrows"}, rareDropTable = {},},
 		  normalDrops = {"90393", "90392", "90390", "90359", "90328", "90296", "90257", "90633"}, rareDropTable = {},},    -- },
 	},
+	
 	Herblore = {
 		thirdSubCatList = {"Potions"},
 		['Potions'] = {
 		--normalDrops = {"Attack Potion", "Cavern Potion", "Relicym's Balm", "Strength Potion", "Serum 207", "Potion", "Compost Potion", "Restore Potion", "Energy Potion", "Defence Potion", "Agility Potion", "Combat Potion", "Prayer Potion", "Crafting Potion", "Super Attack Potion", "Fishing Potion", "Superantipoison Potion", "Super Energy Potion", "Hunter Potion", "Strength Mix Potion", "Magic Essence Potion", "Super Strength Potion", "Super Restore Potion", "Super Defence Potion", "Antidote+", "Antifire Potion", "Ranging Potion", "Magic Potion", "Stamina Potion", "Extended Antifire Potion", "Antidote++", "Zamorak Brew", "Saradomin Brew", "Bastion Potion", "Battlemage Potion", "Extended Super Antifire Potion"}, rareDropTable = {},},
 		  normalDrops = {"90567", "90588", "90589", "90630", "90573", "90560", "90572", "2455", "90592", "90583", "90595", "90594", "90562", "90564", "90587", "90584", "90575", "90563", "90601", "90150", "90569", "90570", "90576"}, rareDropTable = {},},	-- },
 	},
+	
 	-- --Hunter={},
-	-- --Magic={},={},
+	-- --Magic={},
 	-- --Mining={},
 	-- --Prayer={},
+	
 	Runecrafting = {
-		thirdSubCatList = {"Runes"},
+		thirdSubCatList = {"Runes", "Talisman"},
 		['Runes'] = {
 		--normalDrops = {"Air Rune", "Mind Rune", "Water Rune", "Earth Rune", "Fire Rune", "Body Rune", "Cosmic Rune", "Chaos Rune", "Astral Rune", "Nature Rune", "Law Rune", "Death Rune", "Wrath Rune"}, rareDropTable = {},},
-		  normalDrops = {"90120", "90090", "90107", "90067", "90070", "90038", "90130", "90052", "90123", "90091", "90139", "90133", "90109"}, rareDropTable = {},},	-- },	
+		  normalDrops = {"90120", "90090", "90107", "90067", "90070", "90038", "90130", "90052", "90123", "90091", "90139", "90133", "90109", "590038"}, rareDropTable = {},},	-- },	
+		['Talisman'] = {
+		--normalDrops = {"Air Talisman", "Mind Talisman", "Water Talisman", "Earth Talisman", "Fire Talisman", "Body Talisman", "Cosmic Talisman", "Chaos Talisman", "Astral Talisman", "Nature Talisman", "Law Talisman", "Death Talisman", "Wrath Talisman"}, rareDropTable = {},},
+		  normalDrops = {"90105", "90246", "90248", "90208", "90260", "90822", "90243", "90242", "90247", "90245", "90244"}, rareDropTable = {},},	
 	},
+	
 	Smithing = { 
 		thirdSubCatList = {"Rune", "Adamant", "Mithril", "Steel", "Iron", "Blurite", "Bronze"},
 		['Bronze'] = {
