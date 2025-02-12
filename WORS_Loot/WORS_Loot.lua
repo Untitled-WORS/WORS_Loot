@@ -61,7 +61,7 @@ debugPrint("WORS Loot main frame created.")
 -- Title
 local title = WORS_Loot:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
 title:SetPoint("TOP", 0, -10)
-title:SetText("WORS Loot")
+title:SetText("Loot Tables")
 
 -- Dropdowns
 local function SetDropdownTextStyle(dropdown)
@@ -621,7 +621,7 @@ local addon = LibStub("AceAddon-3.0"):NewAddon("WORS_Loot")
 WORSLootMinimapButton = LibStub("LibDBIcon-1.0", true)
 local miniButton = LibStub("LibDataBroker-1.1"):NewDataObject("WORS_Loot", {
 	type = "data source",
-	text = "WORS Loot",
+	text = "Loot Tables",
 	icon = "Interface\\Icons\\INV_Misc_Bag_CoreFelclothBag",
 	OnClick = function(self, btn)
         if btn == "LeftButton" then
@@ -643,7 +643,7 @@ local miniButton = LibStub("LibDataBroker-1.1"):NewDataObject("WORS_Loot", {
 		if not tooltip or not tooltip.AddLine then
 			return
 		end
-		tooltip:AddLine("WORS Loot\n\nLeft-click: Toggle WORS Loot Window", nil, nil, nil, nil)
+		tooltip:AddLine("Loot Tables\n\nLeft-click: Toggle Loot Tables Window", nil, nil, nil, nil)
 		tooltip:AddLine("Right-click: Toggle Transparency 50% or 100%", nil, nil, nil, nil)
 	end,
 })

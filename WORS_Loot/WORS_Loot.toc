@@ -1,6 +1,6 @@
 ## Interface: 30300
-## Title: WORS Loot
-## Notes: An addon for displaying loot tables in WORS.                             Open using minimap button or /worsloot.                                                                                                                                  Item tables are mostly scraped from OSRS wiki may not be accurate to actuall WORS drop tables.                                                              Send bugs or drop table changes to Untitled - Llama69420 on discord.
+## Title: Loot Tables
+## Notes: An addon for displaying loot tables in WORS.|nOpen using minimap button or /worsloot.|nItem tables are mostly scraped from OSRS wiki may not be accurate to actuall WORS drop tables.|nSend bugs or drop table changes to Untitled - Llama69420 on discord.
 ## Author: Untitled - Discord@Llama69420
 ## Version: 1.0
 ## SavedVariables: WORS_LootData
