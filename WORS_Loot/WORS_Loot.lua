@@ -568,12 +568,12 @@ function loadLootTransparency()
     -- Check if the transparency value exists in WORS_LootData
     if WORS_LootData.transparency then
         -- Apply the saved transparency value to the WORS_Loot frame
-        print("WORS Loot: Transparency set to " .. (WORS_LootData.transparency * 100) .. "%.")
+        debugPrint("WORS Loot: Transparency set to " .. (WORS_LootData.transparency * 100) .. "%.")
         WORS_Loot:SetAlpha(WORS_LootData.transparency)
     else
         -- Default behavior if no saved transparency value is found
         WORS_LootData.transparency = 1.0  -- Default to 100% transparency
-        print("WORS Loot: Transparency set to 100%.")
+        debugPrint("WORS Loot: Transparency set to 100%.")
         WORS_Loot:SetAlpha(1.0)
     end
 end
@@ -583,10 +583,10 @@ function toggleLootTransparency()
     -- Toggle transparency between 50% (0.5) and 100% (1.0)
     if WORS_LootData.transparency == 1.0 then
         WORS_LootData.transparency = 0.5
-        print("WORS Loot: Transparency set to 50%.")
+        debugPrint("WORS Loot: Transparency set to 50%.")
     else
         WORS_LootData.transparency = 1.0
-        print("WORS Loot: Transparency set to 100%.")
+        debugPrint("WORS Loot: Transparency set to 100%.")
     end
     WORS_Loot:SetAlpha(WORS_LootData.transparency)
 end
@@ -643,7 +643,7 @@ local miniButton = LibStub("LibDataBroker-1.1"):NewDataObject("WORS_Loot", {
 		if not tooltip or not tooltip.AddLine then
 			return
 		end
-		tooltip:AddLine("Loot Tables\n\nLeft-click: Toggle Loot Tables Window", nil, nil, nil, nil)
+		tooltip:AddLine("Loot Tables\nLeft-click: Toggle Loot Tables Window", nil, nil, nil, nil)
 		tooltip:AddLine("Right-click: Toggle Transparency 50% or 100%", nil, nil, nil, nil)
 	end,
 })
@@ -657,7 +657,4 @@ function addon:OnInitialize()
 		},
 	})
 	WORSLootMinimapButton:Register("WORS_Loot", miniButton, self.db.profile.minimap)
-	loadLootTransparency()
 end
-
-print("WORS Loot addon loaded.")
