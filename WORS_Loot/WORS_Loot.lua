@@ -31,12 +31,15 @@ WORS_Loot:SetBackdrop({
     tile = false, tileSize = 32, edgeSize = 32,
     insets = { left = 5, right = 6, top = 6, bottom = 5 }
 })
---WORS_Loot:SetBackdropColor(0, 0, 0, 1)
+
 
 -- Enable mouse interactions
 WORS_Loot:EnableMouse(true)
 WORS_Loot:SetMovable(true)
 WORS_Loot:RegisterForDrag("LeftButton")
+WORS_Loot:SetFrameStrata("HIGH")  -- Options: "BACKGROUND", "LOW", "MEDIUM", "HIGH", "DIALOG"
+WORS_Loot:SetFrameLevel(WORS_Loot:GetFrameLevel() + 10)
+
 
 -- Set up dragging behavior
 WORS_Loot:SetScript("OnMouseDown", function(self, button)
@@ -56,6 +59,30 @@ WORS_Loot:SetClampedToScreen(true)
 
 WORS_Loot:Hide()
 debugPrint("WORS Loot main frame created.")
+
+local closeButton = CreateFrame("Button", nil, WORS_Loot)
+closeButton:SetSize(20, 20)
+closeButton:SetPoint("TOPRIGHT", WORS_Loot, "TOPRIGHT", -5, -5)
+
+-- Set custom textures
+closeButton:SetNormalTexture("Interface\\WORS\\OldSchool-CloseButton-Up.blp")
+closeButton:SetHighlightTexture("Interface\\WORS\\OldSchool-CloseButton-Highlight.blp", "ADD")
+closeButton:SetPushedTexture("Interface\\WORS\\OldSchool-CloseButton-Down.blp")
+
+-- Close functionality
+-- Close functionality
+closeButton:SetScript("OnClick", function()
+    WORS_Loot:Hide()
+end)
+closeButton:SetScript("OnEnter", function(self)
+	GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
+	GameTooltip:SetText("Close") 
+	GameTooltip:Show()
+end)
+closeButton:SetScript("OnLeave", function()
+	GameTooltip:Hide()
+end)
+
 
 
 -- Title
