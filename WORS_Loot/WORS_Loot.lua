@@ -39,6 +39,7 @@ WORS_Loot:SetMovable(true)
 WORS_Loot:RegisterForDrag("LeftButton")
 WORS_Loot:SetFrameStrata("HIGH")  -- Options: "BACKGROUND", "LOW", "MEDIUM", "HIGH", "DIALOG"
 WORS_Loot:SetFrameLevel(WORS_Loot:GetFrameLevel() + 10)
+tinsert(UISpecialFrames, "WORS_Loot")
 
 
 -- Set up dragging behavior
